@@ -19,12 +19,12 @@ A Mote python client/smart device library
 * MQTT can recieve one message per packet, while Mote can handle an entire tree of messages per a single packet.
 * MQTT responds to subscriptions one message/packet at a time, while Mote can respond with a tree of messages. 
 * When a client creates a subscription to a topic with wildcards and retained values, it recieves all the relevant messages back in one action, this allows the client to know when it has recieved all the relevant messages.
-  * This allows Mote to replace typical request/response flows with a flow that I call subscribe/response/update;  Clients can make a request, recieve a response, and then any time the data from that response changes they'll also receive real time updates. 
+  * This allows Mote to replace typical request/response flows with a flow that we call subscribe/response/update;  Clients can make a request, recieve a response, and then any time the data from that response changes they'll also receive real time updates. 
   * This flow means a client can never have stale data without being disconnected from the server.
 
  # Future plans:
 * Polish and release the libraries that haven't been open sourced yet.
 * Possibly a type system instead of using strings/bytes for every field.
-  * I'd love to figure out a way to do this that doesn't break the remaining compatibility I have with MQTT
+  * We'd love to figure out a way to do this that doesn't break the remaining compatibility we have with MQTT
 * A system for keeping track of what commands are available.
   * A name, list of parameters and types, and possibly a description for each command that gets registered.
