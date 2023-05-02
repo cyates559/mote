@@ -6,13 +6,13 @@ Relpaces the broker in a typical MQTT system.
 https://github.com/cyates559/mote-broker
 
 # mote-webapp (Coming soon)
-A ReactJS client for controlling and managing a smarthome
+A ReactJS client for controlling and managing a Mote system
 
 # mote-micro (Coming soon)
-A mote arduino client/smart device library
+A Mote arduino client/smart device library
 
 # mote-node (Coming soon)
-A mote python client/smart device library
+A Mote python client/smart device library
 
 
  # Key differences between Mote and MQTT:
