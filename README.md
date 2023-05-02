@@ -6,7 +6,7 @@ Relpaces the broker in a typical MQTT system.
 https://github.com/cyates559/mote-broker
 
 # Mote-webapp
-(Coming soon)
+(Coming VERY soon)
 A ReactJS client for controlling and managing a Mote system
 
 # Mote-micro
