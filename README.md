@@ -1,19 +1,19 @@
 # Mote
 Mote is a protocol that is designed to replace MQTT. It works like an API server for frontend clients while also being an MQTT server for embedded devices; taking the best of both worlds.
 
-# mote-broker
+# Mote-broker
 Relpaces the broker in a typical MQTT system.
 https://github.com/cyates559/mote-broker
 
-# mote-webapp
+# Mote-webapp
 (Coming soon)
 A ReactJS client for controlling and managing a Mote system
 
-# mote-micro
+# Mote-micro
 (Coming soon)
 A Mote arduino client/smart device library
 
-# mote-node
+# Mote-node
 (Coming soon)
 A Mote python client/smart device library
 
