@@ -25,5 +25,6 @@ A Mote python client/smart device library
  # Future plans:
 * Polish and release the libraries that haven't been open sourced yet.
 * Possibly a type system instead of using strings/bytes for every field.
+  * I'd love to figure out a way to do this that doesn't break the remaining compatibility I have with MQTT
 * A system for keeping track of what commands are available.
   * A name, list of parameters and types, and possibly a description for each command that gets registered.
