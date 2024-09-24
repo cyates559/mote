@@ -20,11 +20,9 @@ A Mote arduino client/smart device library
 A Mote python client/smart device library
 
 ## Key differences between Mote and MQTT:
-* MQTT can recieve one message per packet, while Mote can handle an entire tree of messages per a single packet.
-* MQTT responds to subscriptions one message/packet at a time, while Mote can respond with a tree of messages. 
-* When a client creates a subscription to a topic with wildcards and retained values, it recieves all the relevant messages back in one action, this allows the client to know when it has recieved all the relevant messages.
-  * This allows Mote to replace typical request/response flows with a flow that we call subscribe/response/update;  Clients can make a request, recieve a response, and then any time the data from that response changes they'll also receive real time updates. 
-  * This flow means a client can never have stale data without being disconnected from the server.
+* MQTT can recieve one message per packet.  If you subscribe to a wildcard topic that can have multiple messages, you'll get those messages back one-at-a-time from the Broker/server.
+* Mote can deal with message trees.  Using the `graft` flag, a client can publish many messages to a topic wildcard.  These messages can all be retained and rebroadcast as one action/publish message. -- Basically, publish messages can contain wildcards and can be structured as a tree.
+  * If Alice is subscribed to topic A and Bob publishes a tree of messages to a different wildcard topic B, then Alice will recieve only one message for topic A that contains all the changes Bob's message made... this will happen regardless of the differences between topic A and topic B.  When any data relevant to topic A is updated, Alice will always recieve a data structure that can be used to update her previous data structure-- the message that is sent to Alice will always be labeled for topic A.
 
  ## Future plans:
 * Create a new storage style which should:
