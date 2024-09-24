@@ -27,8 +27,8 @@ A Mote python client/smart device library
   * This flow means a client can never have stale data without being disconnected from the server.
 
  ## Future plans:
+* Create a new storage style which should:
+  * enable subscribing to slices of data and listening as those slices grow.
+  * enable strict typing
+  * partitioning data in different tables
 * Polish and release the libraries that haven't been open sourced yet.
-* Possibly a type system instead of using strings/bytes for every field.
-  * We'd love to figure out a way to do this that doesn't break the remaining compatibility we have with MQTT
-* A system for keeping track of what commands are available.
-  * A name, list of parameters and types, and possibly a description for each command that gets registered.
