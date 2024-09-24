@@ -26,7 +26,7 @@ A Mote python client/smart device library
 
  ## Future plans:
 * Create a new storage style which should:
-  * enable subscribing to slices of data and listening as those slices grow.
+  * enable subscribing to slices of data and listening as those slices grow. (realtime pagination)
   * enable strict typing
   * partitioning data in different tables
 * Polish and release the libraries that haven't been open sourced yet.
