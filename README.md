@@ -1,5 +1,5 @@
 # Mote
-Mote is a protocol that is designed to replace MQTT. It works like an API server for frontend clients while also being an MQTT server for embedded devices; taking the best of both worlds. With Mote, clients do not obtain information from the server or from other clients by making requests, instead they make subscriptions and data is always kept in sync, similar to GraphQL subscriptions, but without all the boilerplate.
+Mote is a protocol that is designed to replace MQTT. Mote is an event-based data store that maintains support for MQTT devices. With Mote, all clients are connected to the data in real-time: data is always kept in sync and cannot go stale.  Subscriptions are similar to GraphQL subscriptions, but without all the boilerplate -- the server needs no code or configuration, it works out of the box.
 
 The Mote protocol embraces simplicity: simple tools, when designed very carefully, can fill many roles and solve many problems.
 
