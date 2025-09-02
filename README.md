@@ -7,17 +7,17 @@ The Mote protocol embraces simplicity: simple tools, when designed very carefull
 Relpaces the broker in a typical MQTT system.
 https://github.com/cyates559/mote-broker
 
-## Mote-webapp
-(Currently undergoing a transformation to become open-sourcable)
-A ReactJS client for controlling and managing a Mote system
-
-## Mote-micro
-(Coming soon)
-A Mote arduino client/smart device library
+## Mote-native
+A React Native client for Mote, includes modules for controlling different devices
+https://github.com/cyates559/mote-native
 
 ## Mote-node
-(Coming soon)
+(this will be open-sourced soon)
 A Mote python client/smart device library
+
+## Mote-micro
+(this will be open-sourced after mote-node)
+A set of C++ libraries for microcontrollers like RP2040 for using various sensors and outputs with Mote
 
 ## Key differences between Mote and MQTT:
 * MQTT can recieve one message per packet.  If you subscribe to a wildcard topic that can have multiple messages, you'll get those messages back one-at-a-time from the Broker/server.
